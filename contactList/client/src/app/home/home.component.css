@@ -1,0 +1,51 @@
+.bg{
+    height: 38vh;
+    /* margin-top: 0px; */
+    /* width: 100%; */
+    text-align: center;
+    z-index: 0;
+    /* vertical-align: middle; */
+    background-image: url(../../../../images/wave_Top.svg);
+    /* url(../../../../images/wave_Bottom.svg); */
+    /* background-size: 100px, 130px, auto; */
+    background-size: contain; /*, contain; */
+    background-repeat: no-repeat;
+    /* , no-repeat; */
+    background-position: top;
+    /* , bottom; */
+    background-attachment: fixed;
+    /* , fixed; */
+}
+.header {
+  /* height: 10vh;
+    width: 100%; */
+  text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 100px;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+  /* background-color: transparent; */
+  /* margin-top: 20px; */
+  z-index: 0;
+  /* margin: 0 auto; */
+  /* position: absolute; */
+  /* vertical-align: middle; */
+  color: rgb(60, 255, 0);
+  /* background-color: gray; */
+  /* color: #2b3e50; */
+  font-size: 300%;
+}
+
+.container {
+  /* top: 0; */
+  /* height: 20vh; */
+  /* width: 100%; */
+  z-index: 10;
+  overflow: visible;
+  text-align: center;
+  /* opacity: 30%; */
+  color: white;
+  font-weight: bold;
+  /* background-color: transparent; */
+}

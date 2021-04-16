@@ -1,0 +1,65 @@
+<br> <br>
+
+<h1 style="text-align: center; color: rgb(6, 255, 39);"> Contacts </h1>
+<hr>
+<div class="container">
+    <h2 class="page-header"> Add Contact </h2>
+    <form (submit) = "addContact()">
+        <div class="form-group">
+            <label ng-required=true> First Name </label>  <!-- ng-required is for red asterisk -->
+            <input type="text" class="form-control" [(ngModel)] = "firstName" name = "firstName" placeholder="First Name" required>
+        </div>
+        <div class="form-group">
+            <label> Last Name </label>
+            <input type="text" class="form-control" [(ngModel)] = "lastName" name = "lastName" placeholder="Last Name">
+        </div>
+        <div class="form-group" >
+            <label> Address </label>
+            <input type="text" class="form-control" [(ngModel)] = "address" name = "address" placeholder="Address">
+        </div>
+        
+        <div class="form-group">
+            <label ng-required=true> Phone No. </label>  <!-- ng-required is for red asterisk -->
+            <input type="number" class="form-control" [(ngModel)] = "phone" name = "phone" placeholder="Phone Number" required> 
+        </div>
+        <input type="submit" class="btn btn-success" value="Submit">
+    </form>
+</div>
+
+<hr>
+
+<h1 style="text-align: center;"> Contacts List </h1>
+<hr> 
+<br>
+<br>
+<div class="container">
+    <!-- theme url copied from bootswatch and pasted in index.html -->
+    <!-- ngfor to fetch contacts and iterate and dispay  -->
+    <div *ngFor = "let contact of contacts">
+    <!-- creating a row of colums -->
+        <div class="row">
+            <!-- here col is column and 3 is column span
+                xs = extra small screens (mobile phones) 
+                sm = small screens (tablets)
+                md = medium screens (some desktops)
+                lg = large screens (remaining desktops) -->
+            <div class="col-md-2">
+                {{ contact.firstName }}
+            </div>
+            <div class="col-md-2">
+                {{ contact.lastName }}
+            </div>
+            <div class="col-md-5">
+                {{ contact.address }}
+            </div>
+            <div class="col-md-2">
+                {{ contact.phone }}
+            </div>
+            <div class="col-md-1">
+                <!-- Adding a delete button which is a danger button -->
+                <input type="button" class="btn btn-danger" (click) = "deleteContact(contact._id)" value="Delete">
+            </div>
+        </div>
+        <hr>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+Create a contact list dir
+open cmd and cd to that dir and
+
+server-side ------->>>>
+
+npm init  //need node.js
+now in terminal, "npm install express --save" to install express
+npm install mongoose cors body-parser --save 
+mongoose is a object document mapper for using mongodb
+body-parser is used for parsing incoming json data
+cors is for handling the app as server runnning at port 3000 but client side run on port 4200
+npm install nodemon -> which monitors changes in code and updates it to server
+
+to check our api's working, we use postman app or also extension on chrome is available
+
+In postman, 
+to fetch contacts -->
+choose get method and in headers, key = content-type and  value = application/json 
+request url = localhost:3000/api/contacts and send
+
+to add contacts -->
+choose post method and in headers, key = content-type and  value = application/json 
+request url = localhost:3000/api/newContact
+in body, add {
+    "firstName" : "eduei",
+    "lastName" : "bay",
+    "phone" : 976362782
+}  something like this...  and send
+
+to delete contact -->
+choose delete method and in headers, key = content-type and  value = application/json 
+request url = localhost:3000/api/delContact/60749b2e58b57a548c6b56f7   and send
+here 607...6f7 is an id for a contact, using id we delete a contact
+
+
+front-end angular ------->>>>
+
+angular --> npm install @angular/cli 
+to create angular project, "ng new client" where client is the project folder for angular
+now create component for contacts and a service too 
+like "ng g component contacts" and to create service, "ng g service contact"
+service contact creates contact.service.ts and spec.ts
+contacts is for retrieving contacts 
+for contacts schema, create contact.js in contacts folder
+
+bootstrap component is the app.component so we need to specify bootsrap component to be loaded
+
+Client folder is the whole angular
+and everthing else is Back-end
+
+To run:
+"node app.js" in the folder "contacts list"
+and the "npm start" in another terminal inside client folder...
+now go to localhost:4200

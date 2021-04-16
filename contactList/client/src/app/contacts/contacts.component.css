@@ -1,0 +1,4 @@
+[ng-required]:after {
+    color: red;
+    content: "*";
+}

@@ -1,0 +1,15 @@
+<!-- <app-home></app-home> -->
+
+<div>
+    <p *ngIf="clicked; else elseblock"> <app-contacts class="component"></app-contacts> </p>
+    <ng-template #elseblock> <app-home class="component"></app-home> </ng-template>
+    
+    <br> <br>
+    <!-- <div style="text-align: center;"> -->
+        
+    <button class="button" (click) = "toggle()"> <span> {{ curPage }} </span> </button>
+        
+    <!-- </div> -->
+    <br>
+    <br>
+</div>
