@@ -3,9 +3,10 @@ Contacts-List is a MEAN app i.e, MongoDB, Express, Angular, and Node.JS are the 
 
 ## Set-up MongoDB-
 To set mongodb, refer this --> https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/ for windows. <br/>
+<br/>
 Create D:\data\db folders <br/>
 then in terminal, "C:\Program Files\MongoDB\Server\4.4\bin\mongod.exe" --dbpath="c:\data\db". <br/>
-If the MongoDB database server is running correctly, the Command Interpreter displays: <br/>
+### If the MongoDB database server is running correctly, the Command Interpreter displays: <br/>
 [initandlisten] waiting for connections   <br/>
 
 ## Now to Connect to MongoDB.
