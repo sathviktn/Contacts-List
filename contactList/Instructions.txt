@@ -1,9 +1,20 @@
-Create a contact list dir
-open cmd and cd to that dir and
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 server-side ------->>>>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+for setting mongodb,
+refer this --> https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/ for windows
+Create D:\data\db folders
+then in terminal, "C:\Program Files\MongoDB\Server\4.4\bin\mongod.exe" --dbpath="c:\data\db"
+If the MongoDB database server is running correctly, the Command Interpreter displays:
+[initandlisten] waiting for connections
 
-npm init  //need node.js
+Now to Connect to MongoDB.
+To connect a mongo.exe shell to the MongoDB instance, open another Command Interpreter with Administrative privileges and run:
+"C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe"
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create a contact list dir
+open cmd and cd to that dir, and 
+npm init  //initializing node and we need node.js
 now in terminal, "npm install express --save" to install express
 npm install mongoose cors body-parser --save 
 mongoose is a object document mapper for using mongodb
@@ -32,9 +43,9 @@ choose delete method and in headers, key = content-type and  value = application
 request url = localhost:3000/api/delContact/60749b2e58b57a548c6b56f7   and send
 here 607...6f7 is an id for a contact, using id we delete a contact
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 front-end angular ------->>>>
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 angular --> npm install @angular/cli 
 to create angular project, "ng new client" where client is the project folder for angular
 now create component for contacts and a service too 
@@ -47,7 +58,7 @@ bootstrap component is the app.component so we need to specify bootsrap componen
 
 Client folder is the whole angular
 and everthing else is Back-end
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To run:
 "node app.js" in the folder "contacts list"
 and the "npm start" in another terminal inside client folder...
