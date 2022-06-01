@@ -17,3 +17,16 @@ To connect a mongo.exe shell to the MongoDB instance, open another Command Inter
 "node app.js" in the folder "contacts list"  <br/>
 and the "npm start" in another terminal inside client folder... <br/>
 now go to localhost:4200   <br/>
+
+## Reference
+Web Development Full Course - 10 Hours | Learn Web Development from Scratch | Edureka
+
+About The Course:
+
+Full Stack Web Development Masters Program makes you proficient in skills to work with back-end and front-end web technologies. 
+It includes training on: 
+1. Web Development, 
+2. jQuery, Angular,
+3. NodeJS,
+4. ExpressJS, and 
+5. MongoDB. 
